@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipo de numero</title>
+	<script type="text/javascript">
+		var clasificar = function(){
+			var number = parseInt(document.getElementById('number').value);
+			if (number == 0) {
+				document.getElementById('type').value = 'nulo'
+			} else if (number%2 ==0) {
+				document.getElementById('type').value = 'par'
+			} else {
+				document.getElementById('type').value = 'impar'
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Numero: <input type="text" id="number"></p>
+	<p><input type="button" value="clasificar" onClick="clasificar()"></p>
+	<p>Tipo de numero: <input type="text" id="type" disabled="disabled">
+</body>
+</html>
